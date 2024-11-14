@@ -1,15 +1,9 @@
 <?php
+ob_start();
 // Đặt đường dẫn gốc để dùng cho các tệp include
 define('BASE_PATH', dirname(__DIR__) . '/app/views/');
-
 // Tự động load các class sử dụng autoload của Composer
 require_once dirname(__DIR__) . '/vendor/autoload.php';
-
-// Khởi động bộ định tuyến
-use App\core\Router;
-
-// Tạo một instance của Router và cấu hình nó
-$router = new Router();
 ?>
 
 <!DOCTYPE html>
@@ -55,10 +49,12 @@ $router = new Router();
   <!-- Main Content -->
   <main id="main" class="main">
     <?php include BASE_PATH . 'common/pagetitle.php'; ?>
+    <?php include BASE_PATH . 'common/route.php'; ?>
   </main>
 
   <!-- Footer -->
   <?php include BASE_PATH . 'common/footer.php'; ?>
+
   <!-- Vendor JS Files -->
   <script src="/manga_shop/public/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="/manga_shop/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -71,7 +67,7 @@ $router = new Router();
 
   <!-- Template Main JS File -->
   <script src="/manga_shop/public/js/main.js"></script>
-
+  <script src="/manga_shop/public/js/re_load.js"></script>
 </body>
 
 </html>

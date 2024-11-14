@@ -1,65 +1,73 @@
+<!-- app/views/common/sidebar.php -->
 <aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
 
-<ul class="sidebar-nav" id="sidebar-nav">
+    <!-- Link to Dashboard -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link" href="/manga_shop/index.html">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link " href="index.html">
-      <i class="bi bi-grid"></i>
-      <span>Dashboard</span>
-    </a>
-  </li><!-- End Dashboard Nav -->
+    <!-- Section heading for pages -->
+    <li class="nav-heading">Pages</li>
 
-  <li class="nav-heading acitive">Pages</li>
+    <!-- Link to Category Management -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/categories">
+        <i class="bi bi-person"></i>
+        <span>Quản Lý Danh Mục</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="users-profile.html">
-      <i class="bi bi-person"></i>
-      <span>Quản Lý Danh Mục</span>
-    </a>
-  </li><!-- End Profile Page Nav -->
+    <!-- Link to Product Management -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/products">
+        <i class="bi bi-question-circle"></i>
+        <span>Quản Lý Sản Phẩm</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-faq.html">
-      <i class="bi bi-question-circle"></i>
-      <span>Quản Lý Sản Phẩm</span>
-    </a>
-  </li><!-- End F.A.Q Page Nav -->
+    <!-- Link to User Management -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/users">
+        <i class="bi bi-envelope"></i>
+        <span>Quản Lý Người Dùng</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-contact.html">
-      <i class="bi bi-envelope"></i>
-      <span>Quản Lý Người Dùng</span>
-    </a>
-  </li><!-- End Contact Page Nav -->
+    <!-- Link to Payment Management -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/payments">
+        <i class="bi bi-card-list"></i>
+        <span>Quản Lý Thanh Toán</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-register.html">
-      <i class="bi bi-card-list"></i>
-      <span>Quản Lý Thanh Toán</span>
-    </a>
-  </li><!-- End Register Page Nav -->
+    <!-- Link to Order Management -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/orders">
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span>Quản Lý Đơn Hàng</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-login.html">
-      <i class="bi bi-box-arrow-in-right"></i>
-      <span>Quản Lý Đơn Hàng</span>
-    </a>
-  </li><!-- End Login Page Nav -->
+    <!-- Link to Login Page -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/login">
+        <i class="bi bi-dash-circle"></i>
+        <span>Login</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-error-404.html">
-      <i class="bi bi-dash-circle"></i>
-      <span>Login</span>
-    </a>
-  </li><!-- End Error 404 Page Nav -->
+    <!-- Link to Register Page -->
+    <li class="nav-item">
+      <a class="nav-link ajax-link collapsed" href="/manga_shop/register">
+        <i class="bi bi-file-earmark"></i>
+        <span>Register</span>
+      </a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-blank.html">
-      <i class="bi bi-file-earmark"></i>
-      <span>Register</span>
-    </a>
-  </li><!-- End Blank Page Nav -->
-
-</ul>
-
+  </ul>
 </aside>
